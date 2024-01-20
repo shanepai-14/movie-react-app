@@ -1,6 +1,6 @@
 import React from "react";
 const IMAGE_BASE_URL = "http://image.tmdb.org/t/p/w600_and_h900_bestv2";
-const MovieCard = ({ movie}) => {
+const MovieCard = ({ movie }) => {
   return (
     <div className="movie">
       <div>
@@ -9,7 +9,7 @@ const MovieCard = ({ movie}) => {
       <div>
         <img
           src={
-            movie.poster_path !== "N/A" 
+            movie.poster_path !== null
               ? IMAGE_BASE_URL + movie.poster_path
               : "https://via.placeholder.com/400"
           }

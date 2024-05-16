@@ -22,7 +22,7 @@ const App = () => {
       : await fetch(`${POPULAR_BASE_URL}`);
 
     const data = await response.json();
-
+    console.log("spider" + movies);
     console.log(data.results);
     setMovies(data.results);
   };
